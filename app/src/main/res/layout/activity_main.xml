@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 视频渲染区域 -->
+    <SurfaceView
+        android:id="@+id/surfaceVideo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000" />
+
+    <!-- 控制按钮区 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnInit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="初始化" />
+
+        <Button
+            android:id="@+id/btnPrepare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="准备视频" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始播放" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止" />
+
+        <Button
+            android:id="@+id/btnRelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="释放" />
+
+    </LinearLayout>
+
+</LinearLayout>
